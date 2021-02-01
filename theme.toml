@@ -1,0 +1,12 @@
+name = "hugo-components-jueewo"
+license = "MIT"
+licenselink = "https://github.com/jueewo-web/hugo-components-jueewo/blob/master/LICENSE"
+description = " component adding individual jueewo footer"
+homepage = "https://github.com/jueewo-web/hugo-components-jueewo"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "jueewo ventures"
+  homepage = "http://github.com/jueewo-web/"

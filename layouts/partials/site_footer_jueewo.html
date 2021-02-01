@@ -1,0 +1,45 @@
+{{ if (fileExists "data/footer_jueewo.toml") -}}
+<footer class="site-footer">
+
+  <!-- added by jueewo -->
+  <!-- site.Params.footerlinks -->
+  {{ $columns := site.Data.footer_jueewo.footerlinks }} 
+  {{ $nrcol := len $columns }}
+  
+  <!-- site.Params.footerlogo.logo_image -->
+  {{ $logo := site.Data.footer_jueewo.footerlogo.logo_image }}
+  {{ $src := printf "media/%s" $logo   }}
+  
+  <!-- {{ $image := resources.Get "media/jwv-logo.svg" }} -->
+  
+
+  <div class="row">
+    <div class="col-4">
+  
+      <img style="width: 150px; height: auto;" class="avatar" src="{{ $src | relLangURL }}" alt="Logo">
+  
+    </div>
+  
+    {{ range $columns }}
+      <!-- <div style="font-size: 0.75rem; padding:0rem;"> -->
+      <div class="col-4">
+        <p class="powered-by">
+          {{ range .links }}
+            <!-- <li class="nav-item"> -->
+              <!-- <a class="nav-link" href="{{.url | relLangURL}}"></a> -->
+              <a style="display: flex;" href="{{.url | relLangURL}}">
+                {{- .Pre -}}<span>{{ .name | safeHTML }}</span>{{- .Post -}}
+              </a>
+            <!-- </li> -->
+          {{ end }}
+        </p>
+  
+      </div>
+      {{ end }}
+  
+  </div>
+
+  <!-- END added by jueewo -->
+
+</footer>
+{{- end }}
