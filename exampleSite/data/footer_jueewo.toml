@@ -1,0 +1,29 @@
+
+### added by jueewo
+[footerlinks]
+
+[footerlinks.col1]
+links = [
+  {icon = "",  icon_pack = "", name = "Posts", url = "/page-posts-projects/#posts"},
+  {icon = "", icon_pack = "",  name = "Projects", url = "/page-posts-projects/#projects"},
+  {icon = "", icon_pack = "",  name = "Academy", url = "/courses"},
+  {icon = "", icon_pack = "",  name = "Ventures", url = "/page-ventures"},
+]
+
+[footerlinks.col2]
+links = [
+  {icon = "", icon_pack = "",  name = "About", url = "/page-about"},
+  {icon = "", icon_pack = "", name = "Contact", url = "/page-contact"},
+]
+
+[footerlogo]
+logo_image = "jwv-logo.svg"
+
+# [jueewo]
+ # end added by jueewo
+
+
+
+# 
+# Moved here ... DELETED in params.toml
+#
