@@ -1,0 +1,39 @@
+<!-- 
+
+{{ $columns := site.Params.footerlinks }}
+{{ $nrcol := len $columns }}
+
+{{ $image_logo := .page.Params.jueewo.image_logo }}
+{{ $src := printf "media/%s" $image_logo   }}
+
+{{ $image := resources.Get "media/jwv-logo-400.png" }}
+
+
+
+<div class="row">
+  <div class="col-4">
+
+    <img class="avatar" src="{{ $src }}" alt="Logo">
+
+    {{ .page.Content }}
+  </div>
+
+  {{ range $columns }}
+    
+    <div class="col-4">
+    
+      {{ range .links }}
+        
+          <a class="nav-link" href="{{.url | relLangURL}}">
+            {{- .Pre -}}<span>{{ .name | safeHTML }}</span>{{- .Post -}}
+          </a>
+        
+      {{ end }}
+
+    </div>
+    {{ end }}
+
+</div> 
+-->
+
+# by jueewo / DEPRECATED / now part of site_footer.html
