@@ -113,6 +113,9 @@
     </li>
     {{ end }}
 
+    <br><br> <!-- by jueewo -->
+
+
     {{/* Contact links. */}}
     {{ range $data.contact_links }}
     {{ $pack := or .icon_pack "fas" }}
@@ -133,6 +136,7 @@
       <i class="fa-li {{ $pack }} {{ $pack_prefix }}-{{ .icon }} fa-2x" aria-hidden="true"></i>
       <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>{{.name|markdownify|emojify|safeHTML}}</a>
     </li> -->
+
 
     <!-- by jueewo -->
     <a href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
